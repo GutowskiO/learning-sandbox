@@ -1,22 +1,78 @@
-﻿// 6502-emulator.cpp : Ten plik zawiera funkcję „main”. W nim rozpoczyna się i kończy wykonywanie programu.
-//
-
-#include <iostream>
+﻿#include <stdio.h>
+#include <stdlib.h>
 
 
-Byte memory[65536]; // 64KB memory for the 6502
-int main()
-{
-    std::cout << "Hello World!\n";
+// http://www.6502.org/users/obelisk/
+// https://en.wikipedia.org/wiki/MOS_Technology_6502
+// https://www.masswerk.at/6502/6502_instruction_set.html
+// https://sta.c64.org/cbm64mem.html 
+// https://www.c64-wiki.com/wiki/Reset_(Process)
+
+using Byte = unsigned char;
+using Word = unsigned short;
+
+using u32 = unsigned int;
+
+struct Mem {
+	static u32 constexpr MAX_MEM = 1024 * 64; // 64KB memory
+	Byte Data[MAX_MEM];
+
+	void Initialise() {
+		for (u32 i = 0; i < MAX_MEM; ++i) {
+			Data[i] = 0; // clear memory
+		}
+	}
+
+	Byte operator[](u32 Address) const {
+
+		return Data[Address];
+		
+	}
+};
+
+struct CPU {
+	Word PC; // program counter
+	Byte SP; // stack pointer
+
+	Byte A, X, Y; // registers
+
+	Byte C : 1; //status flag
+	Byte Z : 1; // zero flag
+	Byte I : 1; // interrupt disable
+	Byte D : 1; // decimal mode
+	Byte B : 1; // break command
+	Byte V : 1; // overflow flag
+	Byte N : 1; // negative flag
+
+	void Reset(Mem& memory) {
+		PC = 0xFFFC; // reset vector
+		SP = 0xFF; // stack pointer starts at 0xFF
+		D = 0; // decimal mode off
+		A = X = Y = 0; // registers cleared
+		C = Z = I = B = V = N = 0; // status flags cleared
+		memory.Initialise();
+	}
+
+	Byte FetchByte(u32& Cycles, Mem& memory) {
+
+		Byte Data = memory[PC];
+		PC++;
+		Cycles--;
+		return Data;
+	}
+	void Execute(u32 Cycles, Mem& memory) {
+		while (Cycles > 0) {
+			Byte Ins = FetchByte(Cycles, memory);
+			(void)Ins; // For now, we ignore the instruction
+		}
+	}
+};
+
+int main() {
+	Mem mem;
+	CPU cpu;
+	cpu.Reset(mem);
+	cpu.Execute(2, mem);
+	 
+	return 0;
 }
-
-// Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
-// Debugowanie programu: F5 lub menu Debugowanie > Rozpocznij debugowanie
-
-// Porady dotyczące rozpoczynania pracy:
-//   1. Użyj okna Eksploratora rozwiązań, aby dodać pliki i zarządzać nimi
-//   2. Użyj okna programu Team Explorer, aby nawiązać połączenie z kontrolą źródła
-//   3. Użyj okna Dane wyjściowe, aby sprawdzić dane wyjściowe kompilacji i inne komunikaty
-//   4. Użyj okna Lista błędów, aby zobaczyć błędy
-//   5. Wybierz pozycję Projekt > Dodaj nowy element, aby utworzyć nowe pliki kodu, lub wybierz pozycję Projekt > Dodaj istniejący element, aby dodać istniejące pliku kodu do projektu
-//   6. Aby w przyszłości ponownie otworzyć ten projekt, przejdź do pozycji Plik > Otwórz > Projekt i wybierz plik sln
