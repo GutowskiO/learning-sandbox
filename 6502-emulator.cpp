@@ -22,11 +22,17 @@ struct Mem {
 			Data[i] = 0; // clear memory
 		}
 	}
-
+	// rad 1 byte from memory
 	Byte operator[](u32 Address) const {
 
 		return Data[Address];
 		
+	}
+	// write 1 byte to memory
+	Byte& operator[](u32 Address) {
+
+		return Data[Address];
+
 	}
 };
 
@@ -60,10 +66,27 @@ struct CPU {
 		Cycles--;
 		return Data;
 	}
+
+	static constexpr Byte
+		INS_LDA_IM = 0xA9; // Load Accumulator Immediate
+
 	void Execute(u32 Cycles, Mem& memory) {
 		while (Cycles > 0) {
 			Byte Ins = FetchByte(Cycles, memory);
-			(void)Ins; // For now, we ignore the instruction
+			switch (Ins)
+			{
+			case INS_LDA_IM: { // Load Accumulator Immediate
+				Byte Value =
+					FetchByte(Cycles, memory);
+				A = Value; // Load value into accumulator
+				Z = (A == 0);
+				N = (A & 0b10000000) != 0; // set negative flag if bit 7 is set
+				break;
+			}
+			default: {
+				printf("Instruction not handled %d", Ins);
+			} break;
+			}
 		}
 	}
 };
@@ -72,6 +95,8 @@ int main() {
 	Mem mem;
 	CPU cpu;
 	cpu.Reset(mem);
+	mem[0xFFFC] = CPU::INS_LDA_IM; // Set the reset vector to point to LDA immediate instruction
+	mem[0xFFFD] = 0x42; // Load immediate value 0x42
 	cpu.Execute(2, mem);
 	 
 	return 0;
