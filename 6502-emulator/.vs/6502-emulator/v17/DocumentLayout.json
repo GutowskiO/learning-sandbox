@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\WAMOS\\Desktop\\projekty\\6502-emulator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5C451A2B-A3C4-4DEC-850A-5FFBBE811A63}|6502-emulator.vcxproj|C:\\Users\\WAMOS\\Desktop\\projekty\\6502-emulator\\6502-emulator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5C451A2B-A3C4-4DEC-850A-5FFBBE811A63}|6502-emulator.vcxproj|solutionrelative:6502-emulator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "6502-emulator.cpp",
+              "DocumentMoniker": "C:\\Users\\WAMOS\\Desktop\\projekty\\6502-emulator\\6502-emulator.cpp",
+              "RelativeDocumentMoniker": "6502-emulator.cpp",
+              "ToolTip": "C:\\Users\\WAMOS\\Desktop\\projekty\\6502-emulator\\6502-emulator.cpp",
+              "RelativeToolTip": "6502-emulator.cpp",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAvwDsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-20T20:23:14.14Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
