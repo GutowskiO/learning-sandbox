@@ -1,0 +1,13 @@
+name: TrollPlugin
+version: '1.0'
+main: org.gutenn.trollplugin.TrollPlugin
+api-version: '1.20'
+
+commands:
+  setwspawn:
+    permission: permissions.setwspawn
+permissions:
+  permissions.setwspawn:
+    default: op
+
+
