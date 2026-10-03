@@ -1,0 +1,55 @@
+n = 123
+
+def SumaKwCyfr(n):
+    liczba = n
+    petla = 0
+    liczby = []
+    if n <= 9:
+        liczby.append(n)
+    elif n<=99:
+        liczby.append(n//10)
+        liczby.append(n - (n//10))
+    elif n<=999:
+        liczby.append(n//100)
+        
+        liczby.append((n - (n//100 * 100))//10) 
+        liczby.append(n - (n//10 *10))
+    
+    suma = 0
+    for a in range(len(liczby)):
+        suma += liczby[a]*liczby[a]
+    return suma    
+
+suma = SumaKwCyfr(n)
+print(suma)
+
+LUB
+def SumaKwCyfr(n):
+    suma = 0  
+    
+    while n > 0:
+        cyfra = n % 10  
+        suma += cyfra * cyfra  
+        n //= 10  
+        print(cyfra)
+    return suma
+
+
+print(SumaKwCyfr(123))
+
+def czy_nudna(n):
+    liczby = []
+    while True:
+        n = SumaKwCyfr(n)
+        if n == 1:
+            return True
+        if n in liczby:
+            return False
+        liczby.append(n)
+czy_nudna = czy_nudna(4)
+print(czy_nudna)  
+
+
+
+
+

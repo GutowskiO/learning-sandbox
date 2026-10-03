@@ -1,0 +1,35 @@
+8.1
+177
+8.2
+wymiana plynu chłodniczego 29
+marka
+bmw
+daewoo
+honda
+kia
+lancia
+mazda
+nissan
+saab
+volkswagen
+8.3
+897
+nr_rejestracyjny
+SB 3799
+SB 3799
+SB 9213
+SB 9213
+SB 5822
+SB 5822
+usluga
+wymiana sprzegla
+wymiana amortyzatora tyl
+felga stalowa do 16 cali
+ozonowanie ukladu klimatyzacji i kabiny
+wymiana paska rozrzadu
+wymiana oleju silnikowego z filtrem
+8.4
+Listopad: 150530
+Grudzień: 105860
+8.5
+SELECT id_wlasciciela FROM Wlasciciele WHERE id_wlasciciela.Wlasciciele = id.wlasciciela.Samochody AND LEFT(nr_rejestracyjny.Samochody;2) = "SH" AND rok_produkcji.Samochody = 2020

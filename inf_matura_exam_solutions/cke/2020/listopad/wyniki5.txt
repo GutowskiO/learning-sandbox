@@ -1,0 +1,41 @@
+5.1
+
+KLASA	PESEL
+A	95052600643
+H	94063002080
+B	95100700282
+C	95121002200
+
+5.2
+
+przedmiot		Biologia-R	Chemia-R	Fizyka-R	Geografia-R	Historia-R	Informatyka-R	Angielski-P	Angielski-R	Francuski-P	Francuski-R	Hiszpański-P	Hiszpański-R	Niemiecki-P	Niemiecki-R	Matematyka-P	Matematyka-R	Polski-P	Polski-R	WOS-R
+liczba zdajacych	40		33		27		32		20		5		146		101		5		2		19		20		5		2		152		61		152		53		19
+sredni wynik	 	66,60 	 	59,55 	 	63,26 	 	65,56 	 	77,80 	 	77,20 	 	92,71 	 	77,64 	 	79,40 	 	80,50 	 	89,89 	 	70,20 	 	98,40 	 	79,50 	 	73,79 	 	59,44 	 	61,91 	 	67,55 	 	56,32 
+
+
+5.3
+
+przedzial punktowy	liczba osob	% osob
+<0,30>			0		0,00%
+<31,50>			17		11,18%
+<51,75>			59		38,82%
+<76,90>			42		27,63%
+<91,99>			27		17,76%
+<100>			7		4,61%
+
+5.4
+
+		srednia Polski P	srednia Matematyka P
+mezczyzni	60,79			78,94
+kobiety		62,41			71,49
+
+5.5
+
+klasa	mezczyzni	kobiety
+A	1		11
+B	7		18
+C	3		9
+E	21		6
+H	1		13
+
+

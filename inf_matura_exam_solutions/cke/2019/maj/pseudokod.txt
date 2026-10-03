@@ -1,0 +1,14 @@
+n = 10 
+A =	[5,99,3,7,111,13,4,24,4,8]
+
+def czy_parzysta(x):
+    if x % 2 == 0:
+        return True
+    return False    
+
+
+for a in range(len(A)):
+    if czy_parzysta(A[a]):
+        wynik = A[a]
+        break
+print(wynik)    

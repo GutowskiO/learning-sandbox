@@ -1,0 +1,30 @@
+def F(n):
+    if n == 1 or n == 2:
+        return 1
+    wynik = 0
+    temp = 0
+    f1 = 1
+    f2 = 1
+    for i in range(3, n+1):
+        temp=f1
+        f1 = f2
+        f2 = temp+f2
+    return f2 
+wynik = F(4)
+print(wynik)
+
+=================
+
+def kwadrat(x):
+    return x*x
+
+def f(n):
+    if n == 1 or n == 2:
+        return 1
+    if n%2 ==0:
+        return kwadrat(f(n//2 +1)) - kwadrat(f(n//2 -1))
+    else:
+        return kwadrat(f((n+1)//2))+ kwadrat(f((n+1)//2 -1))
+
+print(f(4))              
+ 

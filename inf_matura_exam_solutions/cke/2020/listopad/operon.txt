@@ -1,0 +1,83 @@
+def fib(temp,temp_2,n):
+    if n < 3:
+        return 1
+
+    wynik = 0
+    for a in range(n):
+        temp = temp_2
+        temp_2 = wynik
+        wynik = wynik + temp
+    return wynik % 26    
+
+tekst = "JANKOWALSKIPOZDRAWIA"
+x = 1
+y = 1
+ktore = True
+wynik = ""
+for b in range(len(tekst)):
+    element = tekst[b]
+    k = fib(x,y,ord(element))
+    if ktore:
+        x = k
+    else:
+        y = k
+    
+    wynik = wynik + chr(65+ord(element)-65+k % 26)    
+print(wynik)    
+    int d;
+    int F1, F2, F;
+    string s, szyfr=””;
+    c i n>>s;
+    d = s .s i z e();
+    szyfr.resize(d);
+   c in>>F1>>F2;
+   f or(int i=0;i<d;i++)
+     i f
+ Więcej arkuszy znajdziesz na stronie: arkusze.pl
+ (s[i]>=’A’ and s[i]<=’Z’)
+     {s z y fr[i]=(’A’+(int(s[i]-’A’)+F1)%26);
+      F =( F 1+F2)%26;
+      F 1=F2;
+      F2=F;
+       }
+   c out<<szyfr<<endl;
+=======
+def dec_to_bin(n):
+    potega = 0
+    binarna = ""
+    while 2 ** potega <= n:
+        potega += 1
+    potega -= 1    
+    
+    while potega >= 0:
+        
+        if 2 ** potega <= n:
+            binarna = binarna + "1"
+            n -= 2 ** potega
+            
+        else:
+            if len(binarna) == 0:
+                potega -= 1
+                continue
+            binarna = binarna + "0"
+        potega -= 1   
+    return binarna
+def odwroc(string):
+    odwrocony = ""
+    for a in range(len(string)):
+        odwrocony = odwrocony + string[len(string)-a-1]
+    return odwrocony
+def czy_palindrom(n):
+    n = str(n)
+    if odwroc(n) == n:
+        return True
+    return False
+    
+suma = 0
+i = 1
+while i < 1000000:
+    bin = dec_to_bin(i)
+    if czy_palindrom(bin) and czy_palindrom(i):
+        suma += i
+    i += 1
+print(suma)    

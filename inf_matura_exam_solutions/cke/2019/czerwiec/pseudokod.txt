@@ -1,0 +1,17 @@
+zaszyfrowany = "MA_FOYKARZNRTITU_IMA_"
+
+def odszyfruj(zaszyfrowany, k):
+    odszyfrowany = ""
+    step = len(zaszyfrowany)//k 
+    temp = ""
+    for a in range(step):
+        for b in range(a, len(zaszyfrowany),step):
+            if a % 2 == 0:
+                odszyfrowany = odszyfrowany + zaszyfrowany[b]
+            else:
+                temp = zaszyfrowany[b] + temp
+        odszyfrowany = odszyfrowany + temp
+        temp = ""
+    return odszyfrowany
+wynik = odszyfruj(zaszyfrowany,3)
+print(wynik)      

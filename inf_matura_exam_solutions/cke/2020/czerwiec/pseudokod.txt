@@ -1,0 +1,30 @@
+A = [4, 7, 1, 4, 5]
+B = [1, 4, 5, 4, 7] 
+k = 2
+n = 5
+
+def czy_k_podobne(n, A, B, k):
+    a_temp = [0] * k
+    b_temp = [0] * k
+    a_temp2 = [0] * (k+1)
+    b_temp2 = [0] * (k+1) 
+    
+    for a in range(len(A)):
+        if a + 1 <=k:
+            a_temp[a] = A[a]
+            b_temp[a] = B[n-k+a]
+        if a <=k:
+            a_temp2[a] = A[a+k]
+            b_temp2[a] = B[a]    
+
+    if a_temp == b_temp and a_temp2 == b_temp2:
+        return True
+    return False
+print(czy_k_podobne(n,A,B,k))  
+
+def czy_podobne(n,A,B):
+    for k in range(n):
+        if czy_k_podobne(n, A, B, k):
+            return True
+    return False       
+print(czy_podobne(n,A,B))

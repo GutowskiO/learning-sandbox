@@ -1,0 +1,22 @@
+def czy_liczba_pierwsza(n):
+
+    for a in range(2,n):
+        if n % a == 0:
+           return False
+    return True
+    
+def Najwiekszy_Czynnik(n):
+    czynniki = []
+    a = 1
+    while n>1:
+
+        a += 1
+        if czy_liczba_pierwsza(a) and n % a == 0:
+            czynniki.append(a)
+            n = n//a
+            for b in range(n):
+                if n % a == 0:
+                    czynniki.append(a)
+                    n = n//a
+    return czynniki[len(czynniki)-1]
+print(Najwiekszy_Czynnik(252))

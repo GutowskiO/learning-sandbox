@@ -1,0 +1,11 @@
+6.1
+2010	Australia
+
+6.2
+Indie
+
+6.3
+
+Michael	Schumacher   	108	2000
+Fernando	Alonso	134	2006
+Sebastian	Vettel	281	2012

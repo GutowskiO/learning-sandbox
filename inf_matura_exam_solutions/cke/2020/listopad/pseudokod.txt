@@ -1,0 +1,24 @@
+import math
+
+p = 4
+q = 5
+
+def znajdz_egipskie(p,q):
+    k = []
+    x = p
+    y = q
+    while x!= 0:
+        temp = math.ceil(y/x)
+        temp_2 = 1/temp
+        k.append(temp)
+        temp_3 = x/y - temp_2
+        x = temp_3
+        y = 1 
+        suma = 0
+        for a in k:
+            suma += 1/a
+        
+        if suma == p/q:
+            return k
+    return []
+print(znajdz_egipskie(p,q))    

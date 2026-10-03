@@ -1,0 +1,31 @@
+7.1
+
+Mare Boreum
+
+7.2
+
+29.08.2066	25.07.2076	Spirit 14
+
+7.3
+nazwa_obszaru
+Amazonis
+Arabia
+Syrtis Major
+Elysium
+Sinus Sabaeus
+Mare Tyrrhenum
+Aeolis
+Eridania
+
+7.4
+nazwa_lazika
+Mariner 14
+Mariner 15
+Mariner 20
+Viking 17
+Spirit 7
+Spirit 12
+Rosetta 1
+Rosetta 8
+Phoenix 3
+Phoenix 13

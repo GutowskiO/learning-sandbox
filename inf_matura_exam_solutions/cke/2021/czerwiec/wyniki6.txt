@@ -1,0 +1,44 @@
+6.1
+122
+
+6.2
+Piotrkow Trybunalski
+Grudziadz
+
+6.3
+
+swietokrzyskie	8
+opolskie	7
+lodzkie	7
+lubuskie	6,5
+slaskie	5,53
+malopolskie	5,33
+lubelskie	5
+podkarpackie	5
+dolnoslaskie	4,75
+wielkopolskie	4,25
+kujawsko-pomorskie	4,25
+zachodniopomorskie	4
+podlaskie	4
+warminsko-mazurskie	4
+pomorskie	2,67
+mazowieckie	2,67
+
+6.4
+
+Male nutki
+Stare mandoliny
+Wiosenne bebny
+Powolne fortepiany
+Ciche organy
+Fajne trojkaty
+Rozstrojone pianina
+Metalowe klarnety
+Zlote saksofony
+Piszczace trabki
+
+6.5
+
+1	4	Niebieskie kontrabasy
+3	4	Wiosenne bebny
+4	5	Powolne fortepiany

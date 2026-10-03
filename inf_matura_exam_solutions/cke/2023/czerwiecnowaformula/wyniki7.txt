@@ -1,0 +1,27 @@
+7.1
+typ_u	PoliczOftyp_u
+PC	16
+Phone	2814
+Tablet	267
+
+7.2
+Samsung 478
+
+7.3
+
+SWITZERLAND	5,28
+SLOVENIA	4,35
+IRELAND		3,91
+AUSTRIA		3,84
+CZECH REPUBLIC	3,76
+
+7.4
+
+11935	Galaxy Tab A (2016)	20
+
+7.5 
+SELECT nazwa, count(*) 
+FROM Firmy
+WHERE Firmy.id_firmy = Instalacje.id_firmy
+GROUP BY Firmy.id_firmy
+ORDER BY count(*) DESC
