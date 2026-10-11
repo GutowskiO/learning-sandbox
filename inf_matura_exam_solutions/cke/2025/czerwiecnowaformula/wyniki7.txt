@@ -1,0 +1,42 @@
+7.1
+
+Marta	Jasczyk
+4846
+
+7.2
+
+K052	Anna	Wiatr
+K151	Anna	Mason
+K358	Anna	Dymek
+K275	Barbara	Wroblewska
+K045	Grzegorz	Sikora
+K227	Hanna	Mazur
+K164	Krzysztof	Szostak
+K224	Krzysztof	Orlik
+K221	Marcin	Ozga
+K374	Marek	Sitko
+K277	Mateusz	Szymczyk
+K137	Natalia	Chwiszczuk
+K282	Natalia	Kejza
+
+7.3
+
+1848,6
+
+7.4
+
+F02	Natalia
+F03	Krzysztof
+F04	Grzegorz
+F07	Kamila
+F08	Aneta
+F10	Bartosz
+F18	Kalina
+
+7.5
+SELECT Wizyty.id_klienta
+FROM Salony, Fryzjerzy, Wizyty
+WHERE Fryzjerzy.id_fryzjera = Wizyty.id_fryzjera
+AND Salony.miejsce = "Magnolia"
+AND Salony.id_salonu = Fryzjerzy.id_salonu
+GROUP BY Wizyty.id_klienta

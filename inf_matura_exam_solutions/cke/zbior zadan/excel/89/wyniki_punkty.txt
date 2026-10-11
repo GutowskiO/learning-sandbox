@@ -1,0 +1,35 @@
+89.1
+Bialaszewski	Wiktor
+Cicherski	Szymon
+Florek		Sandra
+Kaminski	Mikolaj
+Krol		Malgorzata
+
+89.2
+55,6
+Sochacka	Inka
+Broszkow	Zofia
+Murczynska	Laura
+Majtas		Lucja
+Odya		Kacper
+Sokolnicka	Inga
+
+89.3
+Grzelecki	Oliwier
+Wojcicki	Aleks
+Rembiewski	Jakub
+Przytula	Jakub
+
+89.4
+Liczba ocen	Język polski	Matematyka	Biologia	Geografia
+dopuszczających	95		110		101		112
+dostatecznych	96		106		105		97
+dobrych		101		100		94		96
+bardzo dobrych	108		97		110		97
+celujących	114		101		104		112
+
+89.5
+300
+
+
+

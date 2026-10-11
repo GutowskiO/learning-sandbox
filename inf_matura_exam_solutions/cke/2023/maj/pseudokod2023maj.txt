@@ -1,0 +1,11 @@
+def dlugosc_A(A):
+    dlugosc = 0
+    temp = 0
+    for a in range(len(A)):
+        if A[a] != temp:
+            dlugosc += 1
+            temp = A[a]
+    return dlugosc*2
+A = [1, 1, 3, 2, 2, 2, 1]   
+print(dlugosc_A(A))    
+

@@ -1,0 +1,40 @@
+5.1
+a)
+amortyzacja od czasu w 2017	amortyzacja od przebiegu w 2017	wartosc auta w 2017
+53600				13400				67000
+b)
+Marka_i_model			
+Iveco Strails
+
+Nr_rejestracyjny
+ERA 210 TR
+
+wartosc auta w 2017
+16321
+
+5.2
+a)
+DAF   		30	
+Iveco 		12
+MAN 		18
+Mercedes 	17 
+Renault 	17
+Scania 		17
+Volvo 		23
+
+b)
+DAF 		273239
+Iveco 		657434
+MAN 		289637
+Mercedes	486545
+Renault 	519936
+Scania 		557117
+Volvo 		307130
+
+5.3
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+5.1
+a)
+
+L	113
+P	25
+T	6
+b)
+
+2007	21
+
+5.2
+
+Nocne Pumy
+Zwinne Mewy
+
+5.3
+
+Wyr1	PoliczOfWyr1
+P	452
+R	170
+W	579
+
+5.4
+
+22

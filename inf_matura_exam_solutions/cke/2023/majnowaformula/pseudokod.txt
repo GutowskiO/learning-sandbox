@@ -1,0 +1,17 @@
+def dec_to_bin(liczba):
+    wynik = ""
+    while liczba > 0:
+        wynik = str(liczba%2) + wynik
+        liczba //= 2
+    return wynik
+    
+def liczba_blokow(liczba):
+    binarna = dec_to_bin(liczba)
+    poprzedni_element = ""
+    bloki = 0
+    for element in binarna:
+        if poprzedni_element != element:
+            poprzedni_element = element
+            bloki += 1
+
+    return bloki 

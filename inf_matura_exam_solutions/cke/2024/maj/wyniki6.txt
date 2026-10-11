@@ -1,0 +1,31 @@
+6.1
+Rafael	Blake 3700
+
+6.2
+
+0	837
+2	825
+4	782
+6	844
+8	886
+10	826
+
+6.3
+
+Listopad 1766
+
+6.4
+
+Honorato	Roth	NIP6570
+Kevin		Wright	YYS1077
+Quynn		Travis	CJX1859
+Sandra		Wheeler	BHW4028
+Ivy		Bowen	QFR8936
+Jasper		Santos	KNM7950
+Helen		White	SRU9727
+Quentin		Tyler	XHK9060
+
+6.5
+
+GCL	5
+YQO	5

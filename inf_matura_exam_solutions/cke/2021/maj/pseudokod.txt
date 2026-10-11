@@ -1,0 +1,31 @@
+n = 5400
+
+def d(n):
+    d = 0
+    for a in range(4):
+        if a == 0:
+                temp = n // 1000
+        if a == 1:
+                temp = n//100 - ((n // 1000) * 10)
+        if a == 2:
+                temp = n//10 -  ((n//100)*10) 
+        if a == 3:
+                temp = n - ((n//10)*10) 
+     
+        for b in range(10):
+
+            if temp + b == 9:
+                if a == 0:
+                    d += b*1000
+                    break
+                if a == 1:
+                    d += b*100
+                    break
+                if a == 2:
+                    d += b*10
+                    break
+                if a == 3:
+                    d += b
+                    break
+    return d    
+print(d(n))     

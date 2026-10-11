@@ -1,0 +1,31 @@
+5.1
+2015
+
+5.2
+data_poczatkowa	17.03.2015
+data_koncowa	10.05.2015
+ 
+5.3
+styczeń		95433
+luty		94730
+marzec		109439
+kwiecień	632931
+maj		329203
+czerwiec	85628
+lipiec		166597
+sierpień	139747
+wrzesień	282342
+październik	170729
+listopad	222440
+grudzień	172072
+
+
+5.4
+a)
+19.04.2015
+b)
+188
+c)
+1399242 m3
+
+

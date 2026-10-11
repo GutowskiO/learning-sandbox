@@ -1,0 +1,43 @@
+funkcja znajdz_pola(tablica, p) 
+	pola <- []
+	dla element_1 w tablica wykonaj
+		dla każdego element_2 w tablica wykonuj
+			jeżeli element_1 = element_2 wykonaj
+				kontynuuj
+			pole <- element_1 * element_2
+			jeżeli pole nie jest w pola oraz pole mod 2 =/= 0 wykonaj
+				pola dodaj pole
+	zwróć pola
+funkcja znajdz_najwieksze_pole(tablica, p)
+	pola <- znajdz_pola(tablica, p)
+	najwieksze_pole <- 0
+	dla każdego pole w pola wykonuj
+		jeżeli pole > największe_pole wykonaj
+			najwieksze_pole = pole
+	zwróć nawieksze_pole
+wynik <- znajdz_najwieksze_pole(A[1..n], p)
+
+=====
+
+def znajdz_pola(tablica, p):
+    pola = []
+    for element_1 in tablica:
+        for element_2 in tablica:
+            if element_1 == element_2:
+                continue
+            pole = element_1 * element_2
+            if pole not in pola and pole % p != 0:
+                pola.append(pole)
+    return pola
+def znajdz_najwieksze_pole(tablica, p):
+    pola = znajdz_pola(tablica, p)
+    najwieksze_pole = 0
+    for pole in pola:
+        if pole > najwieksze_pole:
+            najwieksze_pole = pole
+    return najwieksze_pole
+c = [4, 34, 16, 8, 6, 22, 14, 12, 2, 7]     
+p = 2
+print(znajdz_najwieksze_pole(c,p))
+    
+	

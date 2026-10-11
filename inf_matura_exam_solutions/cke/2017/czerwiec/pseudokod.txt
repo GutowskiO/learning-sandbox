@@ -1,0 +1,5 @@
+funkcja czy_kwadratowa(n,k,Czyjest[1..n])
+	dla i <- 1,2,...,n wykonuj
+		dla j <- i,i+1,...,n wykonuj
+			jeżeli Czyjest[i] = prawda oraz Czyjest[j] = prawda oraz i+j =k wykonaj
+				zwróć prawda 

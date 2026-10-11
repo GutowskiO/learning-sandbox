@@ -1,0 +1,14 @@
+83.1
+wilki: 43,46
+zające: 118,07
+
+83.2
+populacja zajęcy spadnie w 53 miesiącu po raz pierwszy
+populacja wilków spadnie w 98 miesiącu po raz pierwszy
+83.4
+najmniejsza liczebność populacji
+wilki: 28
+zające: 80,65
+najwieksza liczebność populacji
+wilki: 54,21
+zające: 123,39

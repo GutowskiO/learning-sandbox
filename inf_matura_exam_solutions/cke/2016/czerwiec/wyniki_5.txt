@@ -1,0 +1,38 @@
+5.1
+
+Fryderyk	Badowski
+Tomasz		Barszcz
+Magda		Makowicz
+Pawel		Nowak
+Marek		Nowakowski
+Maria		Rybicka
+Justyna		Wysocka
+
+5.2
+
+wiedza o społeczeństwie
+8
+
+5.3
+
+Joanna	Baranska
+Marcin	Zalicki
+Maria	Bajda
+3
+
+5.4
+
+jezyk lacinski i kultura antyczna
+
+5.5
+
+Marek	Nowakowski
+
+jezyk polski
+matematyka
+jezyk niemiecki
+informatyka
+
+5.6
+
+180

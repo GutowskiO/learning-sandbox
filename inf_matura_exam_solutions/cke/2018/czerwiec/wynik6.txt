@@ -1,0 +1,34 @@
+6.1
+
+Aabacka	Nela	WI1150	2	160
+
+Zgbacka	Aaricia	WI1126	11	880
+
+6.2
+
+B	100
+C	48
+D	53
+
+6.3
+
+5	Ramzes	Hcbacki
+
+6.4
+
+Wyr1	Miejscowosc	PoliczOfNr_ew
+B	Aniolkowo	12
+B	Manipulatowo	31
+B	Nieszczerzyn	17
+B	Piarowa	16
+B	Wielka Wola	25
+C	Aniolkowo	8
+C	Manipulatowo	14
+C	Nieszczerzyn	9
+C	Piarowa	18
+C	Wielka Wola	11
+D	Aniolkowo	7
+D	Manipulatowo	11
+D	Nieszczerzyn	4
+D	Piarowa	8
+D	Wielka Wola	7

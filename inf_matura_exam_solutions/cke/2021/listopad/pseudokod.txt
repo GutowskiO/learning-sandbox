@@ -1,0 +1,28 @@
+tablica = []
+for a in range(200000):
+    tablica.append(True)
+
+def sito(tablica):
+    for b in range(2, len(tablica)):
+        liczba = b
+        if tablica[b] == False:
+            continue
+        for c in range(b, len(tablica),b):
+            if c == b:
+                continue
+            tablica[c] = False
+    wynik = []
+    for d in range(2, len(tablica)):
+        wynik.append(tablica[d])
+    return wynik        
+sitowa = sito(tablica)
+print(sitowa)
+
+def czworacze(tablica):
+    wynik = []
+    for a in range(len(tablica)-1):
+        liczba = a+2
+        if tablica[a] == True and tablica[a+2] == True and tablica[a+6] == True and tablica[a+8] == True:
+            wynik.append(a+2)
+    return wynik
+czworki = czworacze(sitowa)

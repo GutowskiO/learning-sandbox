@@ -1,0 +1,21 @@
+tablica = [2, 3, 4, 2, 3, 5, 2, 100, 67]
+
+def znajdz_mode(tablica):
+    liczby = []
+    liczby_liczb = []
+    for a in range(len(tablica)):
+        if tablica[a] not in liczby:
+            liczby.append(tablica[a])
+            liczby_liczb.append(1)
+        else:
+            for b in range(len(liczby)):
+                if tablica[a] == liczby[b]:
+                    liczby_liczb[b] += 1
+    liczba_najczestsza = 0
+    najwieksza_liczba_liczb = 0
+    for c in range(len(liczby)):
+        if liczby_liczb[c] > najwieksza_liczba_liczb:
+            najwieksza_liczba_liczb = liczby_liczb[c]
+            liczba_najczestsza = liczby[c]
+    return liczba_najczestsza
+print(znajdz_mode(tablica))  

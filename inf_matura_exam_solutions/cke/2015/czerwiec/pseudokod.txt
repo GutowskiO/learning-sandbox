@@ -1,0 +1,11 @@
+funkcja czy_triada(a, b, c)
+	jeżeli b - a < c oraz b + a > c wykonaj
+		zwróć prawda
+	zwróć fałsz
+
+liczba_triad <- 0
+dla k <- 1, 2, …, n wykonuj
+	jeżeli czy_triada(c1, c2, ck) = prawda wykonaj
+		liczba_triad <- liczba_triad + 1
+		
+		

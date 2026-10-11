@@ -1,0 +1,21 @@
+5.1
+6 maja 2015
+13172 l
+
+5.3
+miesiąc	koszt
+4	0
+5	23,48
+6	117,4
+7	293,5
+8	422,64
+9	129,14
+
+5.4
+temperatura przekracza 15 stopni i opady przekraczaja 0,6 l/m2 
+22
+temperatura nie przekracza 15 stopni
+88
+temperatura przekracza 15 stopni i opady nie przekraczaja 0,6 l/m2
+73
+

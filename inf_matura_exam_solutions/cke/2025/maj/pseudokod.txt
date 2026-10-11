@@ -1,0 +1,39 @@
+n = 53265
+
+def liczba_cyfr(n):
+    liczba_cyfr = 1
+    licznik_cyfr = 1
+    while True:
+
+        if liczba_cyfr * 10 > n:
+
+            return licznik_cyfr
+        liczba_cyfr *= 10
+        licznik_cyfr += 1
+    
+def falista(n):
+    falista = 0
+    r = n % 100
+    x = r // 10
+    y = r % 10
+    licznik = 100
+    baza = x*10 + y
+
+    wynik = baza
+    dlugosc_n = liczba_cyfr(n)
+
+    for a in range((dlugosc_n + 1)//2 -1):
+        print(a)
+        print((dlugosc_n + 1)//2 -1)
+        if dlugosc_n % 2 != 0 and a == (dlugosc_n + 1)//2 -2:
+            print("test")
+            wynik += y * licznik 
+            break   
+        wynik += baza * 100
+        baza *= 100
+        licznik *= 100
+    return wynik
+    
+wynik = falista(n)
+print(wynik)
+        

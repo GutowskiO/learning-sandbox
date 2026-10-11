@@ -1,0 +1,19 @@
+6.1
+Miesiąc		Dostawa Truskawek	Dostawa Poreczek	Dostawa Malin
+Maj		9287			3309			9238
+Czerwiec	8916			5081			9485
+Lipiec		11339			10567			11592
+Sierpień	11386			11078			11045
+Wrzesień	7476			6355			6532
+
+6.2
+19
+
+6.3
+malinowo-truskawkowe	malinowo-porzeczkowe	truskawkowo-porzeczkowe
+72			41			40
+
+6.4
+malinowo-truskawkowe	malinowo-porzeczkowe	truskawkowo-porzeczkowe
+29732			18008			18382
+

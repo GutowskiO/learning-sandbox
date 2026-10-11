@@ -1,0 +1,21 @@
+7.1
+164-61-25-530	12185
+159-34-45-151	12047
+091-99-74-175	11769
+
+7.2
+2422669,4
+Reneta
+
+7.3
+Styczeń Gala	Luty Gala	Marzec Jonagored	Kwiecień Gala	Maj Gala	Czerwiec Papierowka	Lipiec Lobo	Sierpień Reneta	Wrzesień 
+14017	14969	15079	19404	17382	18661	21216	19054	20881	
+Reneta	Październik Reneta	Listopad Reneta	Grudzień Jonagored
+17065	19755	13425
+
+7.4
+180
+3089,1
+
+
+

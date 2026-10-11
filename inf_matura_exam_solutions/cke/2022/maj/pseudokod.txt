@@ -1,0 +1,3 @@
+zrobiłem ale zapomniałem przekiopowac niestety ale to było proste wyliczasz sobie jakie powinny być liczby w tablicy jeżeli jakas jest to git i potem robisz
+ze ona jest True a jeżeli potem przechodzi dalej przez tamta tablicy i jest False (w sesnsie do zamienienia) to dodajesz do licznika.
+Zagniezdzona petla dla każdej liczby z tablicy jakie liczby powinny wystapic w permutacji
