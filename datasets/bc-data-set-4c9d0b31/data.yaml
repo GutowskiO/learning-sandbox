@@ -1,0 +1,14 @@
+task: detect
+name: bc-data-set
+description: ''
+bytes: 1722005
+url: https://platform.ultralytics.com/oleg-murlikiewicz/datasets/bc-data-set
+version: latest
+created_at: '2026-10-11T22:06:44.323Z'
+updated_at: '2026-10-11T22:17:15.512Z'
+names:
+  0: Class 0
+train: images/train
+val: images/val
+hash: 4c9d0b31
+complete: true
